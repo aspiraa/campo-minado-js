@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="js/campo-minado.js"></script>
+    <script src="js/resolution.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="status">STATUS : EM JOGO</h2>
+        <div id="exibir-execucao"> </div>
+        <div id="log">
+            Log:
+            <ul id="bombLog"></ul>
+        </div>
+    </div>
+
+    <script>
+        var campoMinado = new CampoMinado();
+        var gameResolver = new CampoMinadoResolver(9, campoMinado);
+    </script>
+</body>
+
+</html>
